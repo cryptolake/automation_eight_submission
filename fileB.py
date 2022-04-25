@@ -62,3 +62,6 @@ while True:
     except KeyboardInterrupt:
         listener.close()
         break
+    except EOFError:
+        listener.close()
+        break
